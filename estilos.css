@@ -31,7 +31,6 @@ a {
 }
 
  li {
-    display: inline-flex;
     font-family: 'Libre Baskerville';
     font-weight: normal;
     }
@@ -122,10 +121,13 @@ button {
     padding-top: 5%;
 }
 
-#container1 {
+.container1 {
     background-color: #ffffff00;
     display: flex;
     padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
     justify-content: center;
 }
 
@@ -154,14 +156,17 @@ button {
     padding: inherit;
 }
 
+/* ------------------TRATAMIENTOS-------------------*/  
 
 .secciontratamientos {
     padding-top: 5%;
 }
- #container2 {
+ .container2 {
      height: 280%;
      background-color: rgb(255, 255, 255);
      display: flex;
+     flex-direction: row;
+     flex-flow: wrap;
      justify-content: center;
  }
  
@@ -189,6 +194,40 @@ button {
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
    }
 
+   @media screen and (max-width: 768px) {
+        .hero-image {
+            background-image: url("assets/images/iniciomobile.jpg"); 
+        }
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+        }
+       .divtextonosotros {
+            width: 100%;
+       }
+       .divfotonosotros {
+            width: 100%;
+       }
+       .card1 {
+           width: 100%;
+       }
+       .card2 {
+        width: 100%;
+       }
+       .card3 {
+        width: 100%;
+       }
+       .formulario1 {
+        width: 100%;
+       }
+       .formulario2 {
+        width: 100%;
+       }
+    }
+
 .iconostratamientos {
     text-align: center;
 }
@@ -198,6 +237,22 @@ button {
     margin: 30px;
     margin-bottom: 30px;
 }
+
+/* ------------------TESTIMONIOS-------------------*/ 
+
+#listado {
+    text-align: center;
+}
+
+#listado li {
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #52bcbd;
+    padding: 5px 0 5px;
+}
+
+
+/* ------------------FORMULARIO-------------------*/ 
 .seccionformulario {
     padding-top: 5%;
     padding-bottom: 5%;
@@ -241,7 +296,7 @@ label {
         border-radius: 10px;
         border-width: 1px;
       }
-#genero {
+#sexo {
     font-family: 'Roboto';
     width: 100%;
     background-color: #ddeff0;
@@ -267,6 +322,24 @@ textarea {
     border-width: 1px;;
     margin: 5px;
     padding: 25px;
+}
+
+#nombre-error.error {
+    color: red;
+    font-style: italic;
+    font-size: 15px;
+}
+
+#email-error.error {
+    color: red;
+    font-style: italic;
+    font-size: 15px;
+}
+
+#comentarios-error.error {
+    color: red;
+    font-style: italic;
+    font-size: 15px;
 }
 
 .divsubmit {

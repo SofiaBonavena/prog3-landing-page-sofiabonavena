@@ -17,7 +17,7 @@
 <body>
     <header>
         <nav>
-            <div id="container1">
+            <div class="container1">
                 <div class="logomenu">
                     <a href="index.html"><img class= "logo" src="assets/images/logo.svg" alt="Logo Flora Estetica"></a>
                 </div>
@@ -40,17 +40,17 @@
             </div>
         </nav>
     </header>
-    <section>
-        <div class="hero-image">
+    <main>
+        <section class="hero-image">
             <div class="hero-text">
               <h1>Flora Estetica</h1>
               <p>Hacemos que tu <br> experiencia sea ÚNICA</p>
               <button>Solicita tu turno</button>
             </div>
-          </div>
-        <div class="seccionnosotros">
+        </section>
+        <section class="seccionnosotros">
             <h2>- Nosotros -</h2>
-            <div id="container1">
+            <div class="container1">
                 <div class="divtextonosotros">
                     <p class="textonosotros">
                         Flora Estética es un centro de estética pensado para mujeres y hombres que lucir su mejor versión y realzar la belleza sin perder naturalidad. Contamos con equipamiento de última generación, profesionales altamente capacitados y nos enfocamos principalmente en brindar una atención personalizada, en acompañamiento con un ambiente cálido para que el paciente se relaje.
@@ -61,10 +61,10 @@
                 </div>
 
             </div>
-        </div>
-        <div class="secciontratamientos">
+        </section>
+        <section class="secciontratamientos">
                 <h2>- Tratamientos -</h2>
-                <div id="container2">
+                <div class="container2">
                     <div class= "card1">
                         <div class="iconostratamientos">
                             <img class="iconos" src="assets/images/faciales.svg" alt="Faciales">
@@ -87,24 +87,34 @@
                         <p class="textotratamientos">• Esculpidas en gel/acrilico <br> • Esmaltado semipermanente  <br> • Capping <br>  • Nail Art  <br> • Manicuria </p>
                     </div> 
                 </div>
-        </div>
-        <div class="seccionformulario">
+        </section>
+
+        <section class="secciontestimonios">
+            <h2>- Testimonios -</h2>
+            <div id="listado_container">
+                <ul id="listado">
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="seccionformulario">
             <h2>- Solicitá un turno -</h2>
-            <form>
-                <div id="container2">
+            <form id="main_form">
+                <div class="container2">
                         <div class="formulario1">
                                 <label> Nombre</label><br>
-                                <input type="text" class="inputestilo" placeholder="Nombre"> <br> 
+                                <input type="text" class="inputestilo" placeholder="Nombre" name="nombre"> <br> 
                         </div>
                         <div class="formulario2">
                             <label> Email</label><br>
-                            <input type="email" class="inputestilo" placeholder="Email">
+                            <input type="email" class="inputestilo" placeholder="Email" name="email">
                         </div> 
                 </div>
-                <div id="container2">
+                <div class="container2">
                     <div class="formulario3">
                         <label> Genero</label><br>
-                        <select id="genero" name="genero">
+                        <select id="sexo" name="sexo">
                         <option value="elegir" selected hidden> Seleccionar</option>>
                         <option value="elegir"> Masculino</option>>
                         <option value="elegir"> Femenino</option>>
@@ -112,20 +122,20 @@
                         </select>   
                     </div> 
                 </div>
-                <div id="container2">
+                <div class="container2">
                     <div class="formulario3">
                         <label> En qué tratamientos estás interesado/a?</label><br>
-                        <textarea placeholder="Escriba aqui"></textarea>
+                        <textarea placeholder="Escriba aqui" name="comentarios"></textarea>
                         <div class="divsubmit">
                             <input type="submit" class="submit" value="Enviar">
                         </div>
                     </div>
                 </div>
             </form>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer>
-            <div id="container3">
+            <div class="container3">
                     <div class="copyright">
                         <p class="textocopyright">© Flora Estetica. Derechos reservados 2021</p>
                     </div>
@@ -138,4 +148,9 @@
             </div>
     </footer>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
 </html>
